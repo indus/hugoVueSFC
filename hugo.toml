@@ -64,6 +64,7 @@ With a bunch of [shortcodes](https://github.com/indus/hugoVueSFC/tree/main/layou
 
   [params.assets]
   disableHLJS = true
+  disableFingerprinting = true
 
 [markup.goldmark.renderer]
 unsafe = true
