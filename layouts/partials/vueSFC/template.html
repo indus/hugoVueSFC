@@ -1,0 +1,11 @@
+{{if $vue:= .ctx.Page.Resources.Get .path | default (resources.Get .path) }}
+  {{$vueBase := (replace (path.Base $vue) ".vue" "") }}
+  
+  {{$template := index ($vue.Content | findRE `(?s)<template>(.*)?</template>` ) 0 }}
+  {{$template := $template | replaceRE `(?s)</?template>` "" }}
+  {{if .xtemplate}}
+  <script type="x-template" id="{{.xtemplate}}">{{$template | safeHTML}}</script>
+  {{else}}
+  {{$template | safeHTML}}
+  {{end}}
+{{end}}

@@ -1,0 +1,72 @@
+baseURL = "https://indus.github.io/hugoVueSFC/"
+title = "hugoVueSFC"
+paginate = 5
+theme = "PaperMod"
+enableInlineShortcodes = true
+enableRobotsTXT = true
+buildDrafts = false
+buildFuture = false
+buildExpired = false
+enableEmoji = true
+pygmentsUseClasses = true
+publishDir = "docs"
+disableKinds = ["taxonomy", "term"]
+
+[minify]
+disableXML = true
+
+[outputs]
+home = [ "HTML", "RSS", "JSON" ]
+
+[params]
+env = "production"
+description = "hugoVueSFC - Hugo meets Vue's SFCs"
+author = "indus"
+defaultTheme = "auto"
+ShowShareButtons = false
+ShowReadingTime = false
+displayFullLangName = false
+ShowPostNavLinks = false
+ShowBreadCrumbs = true
+ShowCodeCopyButtons = true
+ShowRssButtonInSectionTermList = false
+ShowToc = false
+
+[languages.en]
+languageName = "English"
+
+[[languages.en.menu.main]]
+name = "Partial_Example"
+url = "partial/"
+weight = 1
+
+
+[[languages.en.menu.main]]
+name = "GitHub"
+url = "https://github.com/indus/hugoVueSFC/"
+
+
+[params.homeInfoParams]
+Title = "Hugo meets Vue's SFCs"
+Content = """
+- **hugoVueSFC** is an attempt to use Vue's Single-File Components (a.k.a. *.vue files) in Hugo directly.
+With a bunch of shortcodes and partials it helps to to easily include SFCs in posts and pages.
+- At the moment it doesn't support [`<script setup>`](https://vuejs.org/api/sfc-script-setup.html) and [`<style scoped>`](https://vue-loader.vuejs.org/guide/scoped-css.html) 😢
+- But besides that it works quite well... 😃
+-
+- This page shows some ways to make use of **hugoVueSFC** in action:
+"""
+
+  [params.editPost]
+  URL = "https://github.com/indus/hugoVueSFC/tree/content"
+  Text = "Suggest Changes"
+  appendFilePath = true
+
+  [params.assets]
+  disableHLJS = true
+
+[markup.goldmark.renderer]
+unsafe = true
+
+[markup.highlight]
+noClasses = false

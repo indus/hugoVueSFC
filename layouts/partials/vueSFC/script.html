@@ -1,0 +1,18 @@
+{{if $vue:= .ctx.Page.Resources.Get .path | default (resources.Get .path) }}
+  {{$vueContent := $vue.Content}}
+  {{$vueBase := (replace (path.Base $vue) ".vue" "") }}
+  {{$hash := md5 $vueContent}}
+  {{$options := cond (isset . "options") .options (dict "format" "cjs" "target" "ES2016" "minify" true)}}
+
+  {{$script := index ($vueContent | findRE `(?s)<script.*?>(.*)?</script>` ) 0 }}
+  {{$script := $script | replaceRE `(?s)</?.*?script.*?>` "" }}
+  {{$script := $script | resources.FromString (printf "%s.%s%s" $vueBase $hash ".ts")  }}
+  {{$script := $script | js.Build $options }}
+  {{if .inline}}
+  <script>{{$script.Content | safeJS}}</script>
+  {{else}}
+  {{$defer := (cond (.defer | default false) "defer" "")|safeHTMLAttr}}
+  {{$async := (cond (.async | default false) "async" "")|safeHTMLAttr}}
+  <script type="text/javascript" src="{{ $script.RelPermalink }}" {{$async}} {{$defer}}></script>
+  {{end}}
+{{end}}

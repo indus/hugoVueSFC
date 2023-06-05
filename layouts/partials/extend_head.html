@@ -1,0 +1,6 @@
+
+{{$syntax := resources.Get "syntax.css"}}
+{{$syntax := $syntax| toCSS (dict "outputStyle" "compressed") -}}
+{{(printf "<%s>%s</%s>" "style" ($syntax.Content | safeCSS) "style") | safeHTML}}
+
+{{partial "vueSFC/global" (dict "ctx" $)}} 

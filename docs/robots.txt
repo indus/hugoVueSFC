@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://indus.github.io/hugoVueSFC/sitemap.xml

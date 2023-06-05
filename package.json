@@ -1,0 +1,14 @@
+{
+  "name": "hugovuesfc",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "dev": "hugo server",
+    "build": "hugo"
+  },
+  "author": "indus",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "vue": "^3.3.4"
+  }
+}

@@ -1,0 +1,10 @@
+{{$options := cond (isset . "options") .options (dict "format" "esm" "minify" (cond .ctx.Site.IsServer false true))}}
+{{$script := (readFile "node_modules/vue/dist/vue.global.prod.js") }}
+{{$hash := md5 $script}}
+{{$script := $script | resources.FromString (printf "vue.global.%s.js" $hash)  }}
+{{$script := $script | js.Build $options }}
+{{if .inline}}
+<script>{{$script.Content | safeJS}}</script>
+{{else}}
+<script type="text/javascript" src="{{ $script.RelPermalink }}"></script>
+{{end}}

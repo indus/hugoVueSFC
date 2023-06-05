@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Posts on hugoVueSFC</title>
+    <link>https://indus.github.io/hugoVueSFC/posts/</link>
+    <description>Recent content in Posts on hugoVueSFC</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 04 Jun 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://indus.github.io/hugoVueSFC/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Example: Shortcode - inlined assets</title>
+      <link>https://indus.github.io/hugoVueSFC/posts/inline/</link>
+      <pubDate>Sun, 04 Jun 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://indus.github.io/hugoVueSFC/posts/inline/</guid>
+      <description>This example uses shortcodes in a post. The style and script assets are inlined. The script asset includes its own version of the Vue library. The template asset is rendered in the div#sfc element directly.</description>
+    </item>
+    
+    <item>
+      <title>Example: Shortcode - linked assets</title>
+      <link>https://indus.github.io/hugoVueSFC/posts/linked/</link>
+      <pubDate>Sun, 04 Jun 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://indus.github.io/hugoVueSFC/posts/linked/</guid>
+      <description>This example uses shortcodes in a post. The style and script assets are linked. The script asset uses a global version of the Ve library. The template asset is rendered in a x-template script that gets used by the vue component.</description>
+    </item>
+    
+  </channel>
+</rss>
