@@ -58,7 +58,7 @@ With a bunch of [shortcodes](https://github.com/indus/hugoVueSFC/tree/main/layou
 """
 
   [params.editPost]
-  URL = "https://github.com/indus/hugoVueSFC/tree/content"
+  URL = "https://github.com/indus/hugoVueSFC/tree/main/content"
   Text = "Suggest Changes"
   appendFilePath = true
 
