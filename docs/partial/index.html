@@ -60,13 +60,15 @@
 </style>
 
 
+    
 
 
 
 
 
 <script type="text/javascript" src="/hugoVueSFC/vue.global.c4fc1987ed6e02db1bcbf3a174b301a1.js"></script>
- 
+
+
 <meta property="og:title" content="Example: Partial - linked assets" />
 <meta property="og:description" content="This example uses partials in a template. The style and script assets are linked. The script asset uses a global version of the Vue library. The template asset is rendered in the div#sfc element directly." />
 <meta property="og:type" content="article" />
@@ -250,7 +252,7 @@
   
 
     <h3 id="code-used-for-this-page">Code used for this page:<a hidden class="anchor" aria-hidden="true" href="#code-used-for-this-page">#</a></h3>
-<h4 id="partialhttpsgithubcomindushugovuesfcblobmainlayoutspartialsextend_headhtmll6"><a href="https://github.com/indus/hugoVueSFC/blob/main/layouts/partials/extend_head.html#L6">Partial</a>:<a hidden class="anchor" aria-hidden="true" href="#partialhttpsgithubcomindushugovuesfcblobmainlayoutspartialsextend_headhtmll6">#</a></h4>
+<h4 id="partialhttpsgithubcomindushugovuesfcblobmainlayoutspartialsextend_headhtmll7"><a href="https://github.com/indus/hugoVueSFC/blob/main/layouts/partials/extend_head.html#L7">Partial</a>:<a hidden class="anchor" aria-hidden="true" href="#partialhttpsgithubcomindushugovuesfcblobmainlayoutspartialsextend_headhtmll7">#</a></h4>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-hbs" data-lang="hbs"><span class="line"><span class="cl"><span class="cp">{{</span><span class="nv">partial</span> <span class="s2">&#34;vueSFC/global&#34;</span> <span class="err">(</span><span class="nv">dict</span> <span class="s2">&#34;ctx&#34;</span> <span class="err">$)</span><span class="cp">}}</span><span class="x"> 
 </span></span></span></code></pre></div><h4 id="partialhttpsgithubcomindushugovuesfcblobmainlayouts_defaultsinglehtmll35-l40"><a href="https://github.com/indus/hugoVueSFC/blob/main/layouts/_default/single.html#L35-L40">Partial</a>:<a hidden class="anchor" aria-hidden="true" href="#partialhttpsgithubcomindushugovuesfcblobmainlayouts_defaultsinglehtmll35-l40">#</a></h4>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-hbs" data-lang="hbs"><span class="line"><span class="cl"><span class="cp">{{</span><span class="nv">partial</span> <span class="s2">&#34;vueSFC/style&#34;</span> <span class="err">(</span><span class="nv">dict</span> <span class="s2">&#34;ctx&#34;</span> <span class="err">$</span> <span class="s2">&#34;path&#34;</span> <span class="nv">.Params.vueSFC</span><span class="err">)</span> <span class="cp">}}</span><span class="x">

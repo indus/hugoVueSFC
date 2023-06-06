@@ -3,4 +3,6 @@
 {{$syntax := $syntax| toCSS (dict "outputStyle" "compressed") -}}
 {{(printf "<%s>%s</%s>" "style" ($syntax.Content | safeCSS) "style") | safeHTML}}
 
-{{partial "vueSFC/global" (dict "ctx" $)}} 
+{{if .Params.vueGlobal}}
+    {{partial "vueSFC/global" (dict "ctx" $)}}
+{{end}}

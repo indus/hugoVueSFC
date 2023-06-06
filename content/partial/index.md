@@ -4,13 +4,14 @@
 "description": "This example uses partials in a template. The style and script assets are linked. The script asset uses a global version of the Vue library. The template asset is rendered in the div#sfc element directly.",
 "tags": ["example", "partial"],
 "hideSummary": true,
+"vueGlobal": true,
 "vueSFC": "msg_partial.vue"
 }
 
 
 
 ### Code used for this page:
-#### [Partial](https://github.com/indus/hugoVueSFC/blob/main/layouts/partials/extend_head.html#L6):
+#### [Partial](https://github.com/indus/hugoVueSFC/blob/main/layouts/partials/extend_head.html#L7):
 ``` hbs
 {{partial "vueSFC/global" (dict "ctx" $)}} 
 ```

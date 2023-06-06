@@ -3,7 +3,8 @@
 "date": "2023-06-04",
 "description": "This example uses shortcodes in a post. The style and script assets are linked. The script asset uses a global version of the Vue library. The template asset is rendered in a x-template script that gets used by the vue component.",
 "tags": ["example", "linked"],
-"hideSummary": true
+"hideSummary": true,
+"vueGlobal":true
 }
 
 ###  Demo:
@@ -13,7 +14,7 @@
 {{< vueSFC/script path="msg_linked.vue" >}}
 
 ### Code used in this post:
-#### [Partial](https://github.com/indus/hugoVueSFC/blob/main/layouts/partials/extend_head.html#L6):
+#### [Partial](https://github.com/indus/hugoVueSFC/blob/main/layouts/partials/extend_head.html#L7):
 ``` hbs
 {{partial "vueSFC/global" (dict "ctx" $)}} 
 ```
