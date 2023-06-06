@@ -31,11 +31,6 @@
 </template>
 
 <script lang="ts">
-<template>
-  <p class="msg">{{ msg }}</p>
-</template>
-
-<script lang="ts">
 import type Vue from 'vue'
 declare global {
     interface Window { Vue: typeof Vue; }
