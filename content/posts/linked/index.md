@@ -1,7 +1,7 @@
 {
 "title": "Example: Shortcode - linked assets",
 "date": "2023-06-04",
-"description": "This example uses shortcodes in a post. The style and script assets are linked. The script asset uses a global version of the Ve library. The template asset is rendered in a x-template script that gets used by the vue component.",
+"description": "This example uses shortcodes in a post. The style and script assets are linked. The script asset uses a global version of the Vue library. The template asset is rendered in a x-template script that gets used by the vue component.",
 "tags": ["example", "linked"],
 "hideSummary": true
 }
