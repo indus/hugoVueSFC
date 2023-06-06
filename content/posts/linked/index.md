@@ -21,11 +21,16 @@
 ``` hbs
 {{</* vueSFC/style path="msg_linked.vue" */>}}
 <div id="sfc"></div>
-{{</* vueSFC/template path="msg_linked.vue" xtemplate="geetings_tmpl" */>}}
+{{</* vueSFC/template path="msg_linked.vue" xtemplate="msg_tmpl" */>}}
 {{</* vueSFC/script path="msg_linked.vue" */>}}
 ```
 #### msg_linked.vue:
 ``` vue
+<template>
+  <p class="msg">{{ msg }}</p>
+</template>
+
+<script lang="ts">
 <template>
   <p class="msg">{{ msg }}</p>
 </template>
@@ -38,6 +43,7 @@ declare global {
 const { createApp, ref } = window.Vue;
 
 createApp({
+    template:"#msg_tmpl",
     setup: () => {
     const msg = ref('Hello from Vue!');
     return { msg };
@@ -51,6 +57,7 @@ createApp({
     font-weight: bold;
     font-size: 2.5em;
 }
+</style>
 </style>
 ```
 

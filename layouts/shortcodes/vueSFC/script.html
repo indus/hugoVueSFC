@@ -2,7 +2,7 @@
   {{$vueContent := $vue.Content}}
   {{$vueBase := (replace (path.Base $vue) ".vue" "") }}
   {{$hash := md5 $vueContent}}
-  {{$options := cond (isset . "options") (.Get "options") (dict "format" "cjs" "target" "ES2016" "minify"  true)}}
+  {{$options := (.Get "options" | default (dict "format" "cjs" "target" "ES2016" "minify"  true))}}
 
   {{$script := index ($vueContent | findRE `(?s)<script.*?>(.*)?</script>` ) 0 }}
   {{$script := $script | replaceRE `(?s)</?.*?script.*?>` "" }}

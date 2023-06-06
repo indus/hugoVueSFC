@@ -2,7 +2,7 @@
   {{$vueContent := $vue.Content}}
   {{$vueBase := (replace (path.Base $vue) ".vue" "") }}
   {{$hash := md5 $vueContent}}
-  {{$options := cond (isset . "options") .options (dict "outputStyle" "compressed")}}
+  {{$options := .options | default (dict "outputStyle" "compressed")}}
 
   {{$style := index ($vueContent | findRE `(?s)<style.*?>(.*)?</style>` ) 0 }}
   {{$style := $style | replaceRE `(?s)</?.*?style.*?>` "" }}
