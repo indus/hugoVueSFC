@@ -109,8 +109,8 @@
   "keywords": [
     "example", "linked"
   ],
-  "articleBody": "Demo: Code used in this post: Partial: {{partial \"vueSFC/global\" (dict \"ctx\" $)}} Shortcode: {{\u003c vueSFC/style path=\"msg_linked.vue\" \u003e}} {{\u003c vueSFC/template path=\"msg_linked.vue\" xtemplate=\"msg_tmpl\" \u003e}} {{\u003c vueSFC/script path=\"msg_linked.vue\" \u003e}} msg_linked.vue: \u003ctemplate\u003e \u003cp class=\"msg\"\u003e{{ msg }}\u003c/p\u003e \u003c/template\u003e \u003cscript lang=\"ts\"\u003e import type Vue from 'vue' declare global { interface Window { Vue: typeof Vue; } } const { createApp, ref } = window.Vue; createApp({ template:\"#msg_tmpl\", setup: () =\u003e { const msg = ref('Hello from Vue!'); return { msg }; } }).mount(\"#sfc\"); \u003c/script\u003e \u003cstyle lang=\"scss\"\u003e .msg { color: lighten(steelblue, 5); font-weight: bold; font-size: 2.5em; } \u003c/style\u003e \u003c/style\u003e ",
-  "wordCount" : "93",
+  "articleBody": "Demo: Code used in this post: Partial: {{partial \"vueSFC/global\" (dict \"ctx\" $)}} Shortcode: {{\u003c vueSFC/style path=\"msg_linked.vue\" \u003e}} {{\u003c vueSFC/template path=\"msg_linked.vue\" xtemplate=\"msg_tmpl\" \u003e}} {{\u003c vueSFC/script path=\"msg_linked.vue\" \u003e}} msg_linked.vue: \u003ctemplate\u003e \u003cp class=\"msg\"\u003e{{ msg }}\u003c/p\u003e \u003c/template\u003e \u003cscript lang=\"ts\"\u003e import type Vue from 'vue' declare global { interface Window { Vue: typeof Vue; } } const { createApp, ref } = window.Vue; createApp({ template:\"#msg_tmpl\", setup: () =\u003e { const msg = ref('Hello from Vue!'); return { msg }; } }).mount(\"#sfc\"); \u003c/script\u003e \u003cstyle lang=\"scss\"\u003e .msg { color: lighten(steelblue, 5); font-weight: bold; font-size: 2.5em; } \u003c/style\u003e ",
+  "wordCount" : "92",
   "inLanguage": "en",
   "datePublished": "2023-06-04T00:00:00Z",
   "dateModified": "2023-06-04T00:00:00Z",
@@ -288,7 +288,6 @@
 </span></span><span class="line"><span class="cl">    <span class="nx">font</span><span class="o">-</span><span class="nx">weight</span><span class="o">:</span> <span class="nx">bold</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl">    <span class="nx">font</span><span class="o">-</span><span class="nx">size</span><span class="o">:</span> <span class="mf">2.5</span><span class="nx">em</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">style</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">style</span><span class="p">&gt;</span>
 </span></span></code></pre></div>
 

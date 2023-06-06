@@ -53,7 +53,6 @@ createApp({
     font-size: 2.5em;
 }
 </style>
-</style>
 ```
 
 
