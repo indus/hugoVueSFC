@@ -14,7 +14,7 @@
 {{< vueSFC/script path="msg_inline.vue" inline=true >}}
 
 ### Code used in this post:
-#### Shortcode:
+#### [Shortcode](https://github.com/indus/hugoVueSFC/blob/main/content/posts/inline/index.md?plain=1#L10-L14):
 ``` hbs
 {{</* vueSFC/style path="msg_inline.vue" inline=true */>}}
 <div id="sfc">
@@ -22,7 +22,7 @@
 </div>
 {{</* vueSFC/script path="msg_inline.vue" inline=true */>}}
 ```
-#### msg_inline.vue:
+#### [msg_inline.vue](https://github.com/indus/hugoVueSFC/blob/main/content/posts/inline/msg_inline.vue):
 ``` vue
 <template>
     <p class="msg">{{ msg }}</p>

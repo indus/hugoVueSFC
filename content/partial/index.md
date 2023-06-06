@@ -10,10 +10,11 @@
 
 
 ### Code used in this post:
-#### Partial:
+#### [Partial](https://github.com/indus/hugoVueSFC/blob/main/layouts/partials/extend_head.html#L6):
 ``` hbs
 {{partial "vueSFC/global" (dict "ctx" $)}} 
 ```
+#### [Partial](https://github.com/indus/hugoVueSFC/blob/main/layouts/_default/single.html#L35-L40):
 ``` hbs
 {{partial "vueSFC/style" (dict "ctx" $ "path" .Params.vueSFC) }}
 <div id="sfc">
@@ -21,7 +22,7 @@
 </div>
 {{partial "vueSFC/script" (dict "ctx" $ "path" .Params.vueSFC "defer" true)}}
 ```
-#### msg_partial.vue:
+#### [msg_partial.vue](https://github.com/indus/hugoVueSFC/blob/main/content/partial/msg_partial.vue):
 ``` vue
 <template>
   <p class="msg">{{ msg }}</p>

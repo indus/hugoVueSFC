@@ -13,18 +13,18 @@
 {{< vueSFC/script path="msg_linked.vue" >}}
 
 ### Code used in this post:
-#### Partial:
+#### [Partial](https://github.com/indus/hugoVueSFC/blob/main/layouts/partials/extend_head.html#L6):
 ``` hbs
 {{partial "vueSFC/global" (dict "ctx" $)}} 
 ```
-#### Shortcode:
+#### [Shortcode](https://github.com/indus/hugoVueSFC/blob/main/content/posts/linked/index.md?plain=1#L10-L13):
 ``` hbs
 {{</* vueSFC/style path="msg_linked.vue" */>}}
 <div id="sfc"></div>
 {{</* vueSFC/template path="msg_linked.vue" xtemplate="msg_tmpl" */>}}
 {{</* vueSFC/script path="msg_linked.vue" */>}}
 ```
-#### msg_linked.vue:
+#### [msg_linked.vue](https://github.com/indus/hugoVueSFC/blob/main/content/posts/linked/msg_linked.vue):
 ``` vue
 <template>
     <p class="msg">{{ msg }}</p>
