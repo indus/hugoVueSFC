@@ -265,7 +265,7 @@
 </span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">script</span> <span class="na">lang</span><span class="o">=</span><span class="s">&#34;ts&#34;</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl"><span class="kr">import</span> <span class="nx">type</span> <span class="nx">Vue</span> <span class="nx">from</span> <span class="s1">&#39;vue&#39;</span>
 </span></span><span class="line"><span class="cl"><span class="nx">declare</span> <span class="nx">global</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">    <span class="kr">interface</span> <span class="nx">Window</span> <span class="p">{</span> <span class="nx">Vue</span><span class="o">:</span> <span class="k">typeof</span> <span class="nx">Vue</span><span class="p">;</span> <span class="p">}</span>
+</span></span><span class="line"><span class="cl">  <span class="kr">interface</span> <span class="nx">Window</span> <span class="p">{</span> <span class="nx">Vue</span><span class="o">:</span> <span class="k">typeof</span> <span class="nx">Vue</span><span class="p">;</span> <span class="p">}</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
 </span></span><span class="line"><span class="cl"><span class="kr">const</span> <span class="p">{</span> <span class="nx">createApp</span><span class="p">,</span> <span class="nx">ref</span> <span class="p">}</span> <span class="o">=</span> <span class="nb">window</span><span class="p">.</span><span class="nx">Vue</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl">
@@ -279,9 +279,9 @@
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">style</span> <span class="na">lang</span><span class="o">=</span><span class="s">&#34;scss&#34;</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl"><span class="p">.</span><span class="nx">msg</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">    <span class="nx">color</span><span class="o">:</span>  <span class="nx">lighten</span><span class="p">(</span><span class="nx">limegreen</span><span class="p">,</span> <span class="mi">5</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">    <span class="nx">font</span><span class="o">-</span><span class="nx">weight</span><span class="o">:</span> <span class="nx">bold</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="nx">font</span><span class="o">-</span><span class="nx">size</span><span class="o">:</span> <span class="mf">2.5</span><span class="nx">em</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">color</span><span class="o">:</span> <span class="nx">lighten</span><span class="p">(</span><span class="nx">limegreen</span><span class="p">,</span> <span class="mi">5</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">font</span><span class="o">-</span><span class="nx">weight</span><span class="o">:</span> <span class="nx">bold</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">font</span><span class="o">-</span><span class="nx">size</span><span class="o">:</span> <span class="mf">2.5</span><span class="nx">em</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
 </span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">style</span><span class="p">&gt;</span>
 </span></span></code></pre></div>

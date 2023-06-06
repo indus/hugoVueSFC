@@ -5,7 +5,7 @@
 <script lang="ts">
 import type Vue from 'vue'
 declare global {
-    interface Window { Vue: typeof Vue; }
+  interface Window { Vue: typeof Vue; }
 }
 const { createApp, ref } = window.Vue;
 
@@ -20,8 +20,8 @@ createApp({
 
 <style lang="scss">
 .msg {
-    color:  lighten(limegreen, 5);
-    font-weight: bold;
-    font-size: 2.5em;
+  color: lighten(limegreen, 5);
+  font-weight: bold;
+  font-size: 2.5em;
 }
 </style>

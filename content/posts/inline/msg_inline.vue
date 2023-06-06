@@ -7,9 +7,9 @@ import { createApp, ref } from 'vue/dist/vue.esm-bundler.js';
 
 createApp({
     setup: () => {
-    const msg = ref('Hello from Vue!');
-    console.info(msg.value);
-    return { msg };
+        const msg = ref('Hello from Vue!');
+        console.info(msg.value);
+        return { msg };
     }
 }).mount("#sfc");
 </script>

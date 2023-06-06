@@ -27,7 +27,7 @@
 #### msg_linked.vue:
 ``` vue
 <template>
-  <p class="msg">{{ msg }}</p>
+    <p class="msg">{{ msg }}</p>
 </template>
 
 <script lang="ts">
@@ -38,17 +38,17 @@ declare global {
 const { createApp, ref } = window.Vue;
 
 createApp({
-    template:"#msg_tmpl",
+    template: "#msg_tmpl",
     setup: () => {
-    const msg = ref('Hello from Vue!');
-    return { msg };
+        const msg = ref('Hello from Vue!');
+        return { msg };
     }
 }).mount("#sfc");
 </script>
 
 <style lang="scss">
 .msg {
-    color:  lighten(steelblue, 5);
+    color: lighten(steelblue, 5);
     font-weight: bold;
     font-size: 2.5em;
 }
