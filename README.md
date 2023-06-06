@@ -5,4 +5,4 @@ With a bunch of [shortcodes](https://github.com/indus/hugoVueSFC/tree/main/layou
 At the moment it doesn't support [`<script setup>`](https://vuejs.org/api/sfc-script-setup.html) and [`<style scoped>`](https://vue-loader.vuejs.org/guide/scoped-css.html) 😢
 But besides that it works quite well... 😃
 
-This page shows some ways to make use of **hugoVueSFC** in action: [Demo](indus.github.io/hugoVueSFC)
+This page shows some ways to make use of **hugoVueSFC** in action: [Demo](https://indus.github.io/hugoVueSFC)
