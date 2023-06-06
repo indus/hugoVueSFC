@@ -103,7 +103,7 @@
   "keywords": [
     "example", "partial"
   ],
-  "articleBody": "Code used in this post: Partial: {{partial \"vueSFC/global\" (dict \"ctx\" $)}} Partial: {{partial \"vueSFC/style\" (dict \"ctx\" $ \"path\" .Params.vueSFC) }} {{partial \"vueSFC/template\" (dict \"ctx\" $ \"path\" .Params.vueSFC)}} {{partial \"vueSFC/script\" (dict \"ctx\" $ \"path\" .Params.vueSFC \"defer\" true)}} msg_partial.vue: \u003ctemplate\u003e \u003cp class=\"msg\"\u003e{{ msg }}\u003c/p\u003e \u003c/template\u003e \u003cscript lang=\"ts\"\u003e import type Vue from 'vue' declare global { interface Window { Vue: typeof Vue; } } const { createApp, ref } = window.Vue; createApp({ setup: () =\u003e { const msg = ref('Hello from Vue!'); return { msg }; } }).mount(\"#sfc\"); \u003c/script\u003e \u003cstyle lang=\"scss\"\u003e .msg { color: lighten(limegreen, 5); font-weight: bold; font-size: 2.5em; } \u003c/style\u003e ",
+  "articleBody": "Code used for this page: Partial: {{partial \"vueSFC/global\" (dict \"ctx\" $)}} Partial: {{partial \"vueSFC/style\" (dict \"ctx\" $ \"path\" .Params.vueSFC) }} {{partial \"vueSFC/template\" (dict \"ctx\" $ \"path\" .Params.vueSFC)}} {{partial \"vueSFC/script\" (dict \"ctx\" $ \"path\" .Params.vueSFC \"defer\" true)}} msg_partial.vue: \u003ctemplate\u003e \u003cp class=\"msg\"\u003e{{ msg }}\u003c/p\u003e \u003c/template\u003e \u003cscript lang=\"ts\"\u003e import type Vue from 'vue' declare global { interface Window { Vue: typeof Vue; } } const { createApp, ref } = window.Vue; createApp({ setup: () =\u003e { const msg = ref('Hello from Vue!'); return { msg }; } }).mount(\"#sfc\"); \u003c/script\u003e \u003cstyle lang=\"scss\"\u003e .msg { color: lighten(limegreen, 5); font-weight: bold; font-size: 2.5em; } \u003c/style\u003e ",
   "wordCount" : "102",
   "inLanguage": "en",
   "datePublished": "2023-06-04T00:00:00Z",
@@ -249,7 +249,7 @@
   <script type="text/javascript" src="/hugoVueSFC/msg_partial.f93ebb00e8c9f4fd61b015b93a7067c7.js"  defer></script>
   
 
-    <h3 id="code-used-in-this-post">Code used in this post:<a hidden class="anchor" aria-hidden="true" href="#code-used-in-this-post">#</a></h3>
+    <h3 id="code-used-for-this-page">Code used for this page:<a hidden class="anchor" aria-hidden="true" href="#code-used-for-this-page">#</a></h3>
 <h4 id="partialhttpsgithubcomindushugovuesfcblobmainlayoutspartialsextend_headhtmll6"><a href="https://github.com/indus/hugoVueSFC/blob/main/layouts/partials/extend_head.html#L6">Partial</a>:<a hidden class="anchor" aria-hidden="true" href="#partialhttpsgithubcomindushugovuesfcblobmainlayoutspartialsextend_headhtmll6">#</a></h4>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-hbs" data-lang="hbs"><span class="line"><span class="cl"><span class="cp">{{</span><span class="nv">partial</span> <span class="s2">&#34;vueSFC/global&#34;</span> <span class="err">(</span><span class="nv">dict</span> <span class="s2">&#34;ctx&#34;</span> <span class="err">$)</span><span class="cp">}}</span><span class="x"> 
 </span></span></span></code></pre></div><h4 id="partialhttpsgithubcomindushugovuesfcblobmainlayouts_defaultsinglehtmll35-l40"><a href="https://github.com/indus/hugoVueSFC/blob/main/layouts/_default/single.html#L35-L40">Partial</a>:<a hidden class="anchor" aria-hidden="true" href="#partialhttpsgithubcomindushugovuesfcblobmainlayouts_defaultsinglehtmll35-l40">#</a></h4>

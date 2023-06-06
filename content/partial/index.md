@@ -9,7 +9,7 @@
 
 
 
-### Code used in this post:
+### Code used for this page:
 #### [Partial](https://github.com/indus/hugoVueSFC/blob/main/layouts/partials/extend_head.html#L6):
 ``` hbs
 {{partial "vueSFC/global" (dict "ctx" $)}} 
