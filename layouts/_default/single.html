@@ -32,11 +32,7 @@
 
     {{if .Params.vueSFC}}
     <h3>Demo:</h3>
-    {{partial "vueSFC/style" (dict "ctx" $ "path" .Params.vueSFC) }}
-    <div id="sfc">
-      {{partial "vueSFC/template" (dict "ctx" $ "path" .Params.vueSFC)}}
-    </div>
-    {{partial "vueSFC/script" (dict "ctx" $ "path" .Params.vueSFC "defer" true)}}
+    {{partial "vueSFC/all" (dict "ctx" $ "path" .Params.vueSFC  "mountId" "sfc" "defer" true ) }}
     {{ end }}
 
     {{- if not (.Param "disableAnchoredHeadings") }}

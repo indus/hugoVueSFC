@@ -7,21 +7,22 @@
 }
 
 ###  Demo:
-{{< vueSFC/style path="msg_inline.vue" inline=true >}}
-<div id="sfc">
-{{< vueSFC/template path="msg_inline.vue" >}}
-</div>
-{{< vueSFC/script path="msg_inline.vue" inline=true >}}
+{{< vueSFC/all path="msg_inline.vue" mountId="sfc" inlineStyle=true inlineScript=true >}}
 
 ### Code used in this post:
-#### [index.md](https://github.com/indus/hugoVueSFC/blob/main/content/posts/inline/index.md?plain=1#L10-L14):
+#### [index.md](https://github.com/indus/hugoVueSFC/blob/main/content/posts/inline/index.md?plain=1#L10):
 ``` hbs {lineNos=true,lineNoStart=10}
+{{</* vueSFC/all path="msg_inline.vue" mountId="sfc" inlineStyle=true inlineScript=true */>}}
+```
+<small>🤓 To gain more control you may want to use the following equivalent:</small>
+``` hbs {lineNos=true}
 {{</* vueSFC/style path="msg_inline.vue" inline=true */>}}
 <div id="sfc">
 {{</* vueSFC/template path="msg_inline.vue" */>}}
 </div>
 {{</* vueSFC/script path="msg_inline.vue" inline=true */>}}
 ```
+
 #### [msg_inline.vue](https://github.com/indus/hugoVueSFC/blob/main/content/posts/inline/msg_inline.vue):
 {{< highlightFile path="msg_inline.vue" lang="vue" options="lineNos=true" >}}
 

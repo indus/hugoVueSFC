@@ -1,0 +1,10 @@
+
+{{partial "vueSFC/all" (dict
+"ctx" .
+"path" (.Get "path")
+"mountId" (.Get "mountId" | default "sfc")
+"inlineStyle" (.Get "inlineStyle")
+"inlineScript" (.Get "inlineScript")
+"xtemplate" (.Get "xtemplate")
+)
+}}

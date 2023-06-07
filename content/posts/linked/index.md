@@ -8,18 +8,20 @@
 }
 
 ###  Demo:
-{{< vueSFC/style path="msg_linked.vue" >}}
-<div id="sfc"></div>
-{{< vueSFC/template path="msg_linked.vue" xtemplate="msg_tmpl" >}}
-{{< vueSFC/script path="msg_linked.vue" >}}
+{{< vueSFC/all path="msg_linked.vue" mountId="sfc" xtemplate="msg_tmpl" >}}
 
 ### Code used in this post:
 #### [extend_head.html](https://github.com/indus/hugoVueSFC/blob/main/layouts/partials/extend_head.html#L7):
 ``` hbs {lineNos=true,lineNoStart=7}
 {{partial "vueSFC/global" (dict "ctx" $)}} 
 ```
-#### [index.md](https://github.com/indus/hugoVueSFC/blob/main/content/posts/linked/index.md?plain=1#L10-L13):
-``` hbs {lineNos=true,lineNoStart=10}
+#### [index.md](https://github.com/indus/hugoVueSFC/blob/main/content/posts/linked/index.md?plain=1#L11):
+``` hbs {lineNos=true,lineNoStart=11}
+{{</* vueSFC/all path="msg_linked.vue" mountId="sfc" xtemplate="msg_tmpl" */>}}
+```
+
+<small>🤓 To gain more control you may want to use the following equivalent:</small>
+``` hbs {lineNos=true}
 {{</* vueSFC/style path="msg_linked.vue" */>}}
 <div id="sfc"></div>
 {{</* vueSFC/template path="msg_linked.vue" xtemplate="msg_tmpl" */>}}

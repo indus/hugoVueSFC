@@ -1,0 +1,7 @@
+{{$ctx := (default $ .ctx)}}
+{{partial "vueSFC/style" (dict "ctx" $ctx "path" .path "inline" .inlineStyle "options" .optionsStyle) }}
+<div id='{{.mountId | default "sfc"}}'>
+{{if .xtemplate}}</div>{{partial "vueSFC/template" (dict "ctx" $ctx "path" .path "xtemplate" .xtemplate )}}
+{{else}}{{partial "vueSFC/template" (dict "ctx" $ctx "path" .path )}}</div>
+{{end}}
+{{partial "vueSFC/script" (dict "ctx" $ctx "path" .path "inline" .inlineScript "options" .optionsScript "defer" .defer "async" .async)}}
