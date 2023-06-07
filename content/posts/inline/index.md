@@ -14,8 +14,8 @@
 {{< vueSFC/script path="msg_inline.vue" inline=true >}}
 
 ### Code used in this post:
-#### [Shortcode](https://github.com/indus/hugoVueSFC/blob/main/content/posts/inline/index.md?plain=1#L10-L14):
-``` hbs
+#### [index.md](https://github.com/indus/hugoVueSFC/blob/main/content/posts/inline/index.md?plain=1#L10-L14):
+``` hbs {lineNos=true,lineNoStart=10}
 {{</* vueSFC/style path="msg_inline.vue" inline=true */>}}
 <div id="sfc">
 {{</* vueSFC/template path="msg_inline.vue" */>}}
@@ -23,29 +23,5 @@
 {{</* vueSFC/script path="msg_inline.vue" inline=true */>}}
 ```
 #### [msg_inline.vue](https://github.com/indus/hugoVueSFC/blob/main/content/posts/inline/msg_inline.vue):
-``` vue
-<template>
-    <p class="msg">{{ msg }}</p>
-</template>
-
-<script lang="ts">
-import { createApp, ref } from 'vue/dist/vue.esm-bundler.js';
-
-createApp({
-    setup: () => {
-        const msg = ref('Hello from Vue!');
-        return { msg };
-    }
-}).mount("#sfc");
-</script>
-
-<style lang="scss">
-.msg {
-    color: lighten(salmon, 5);
-    font-weight: bold;
-    font-size: 2.5em;
-}
-</style>
-```
-
+{{< highlightFile path="msg_inline.vue" lang="vue" options="lineNos=true" >}}
 

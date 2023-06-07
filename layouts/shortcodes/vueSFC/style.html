@@ -1,4 +1,4 @@
-{{if $vue:= $.Page.Resources.Get  (.Get "path")}}
+{{if $vue:= $.Page.Resources.Get  (.Get "path") | default (resources.Get (.Get "path"))}}
   {{$vueContent := $vue.Content}}
   {{$vueBase := (replace (path.Base $vue) ".vue" "") }}
   {{$hash := md5 $vueContent}}

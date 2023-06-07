@@ -1,0 +1,3 @@
+{{if $file:= $.Page.Resources.Get (.Get "path") | default (resources.Get (.Get "path")) }}
+{{highlight $file.Content (.Get "lang") (.Get "options")}}
+{{end}}

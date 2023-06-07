@@ -1,5 +1,5 @@
 {{$options := .options | default (dict "format" "esm")}}
-{{$script := (readFile (printf "node_modules/vue/dist/vue.global%s.js" (cond .ctx.Site.IsServer "" ".prod"))) }}
+{{$script := (readFile (printf "node_modules/vue/dist/vue.global%s.js" (cond hugo.IsProduction "" ".prod"))) }}
 {{$hash := md5 $script}}
 {{$script := $script | resources.FromString (printf "vue.global.%s.js" $hash)  }}
 {{$script := $script | js.Build $options }}

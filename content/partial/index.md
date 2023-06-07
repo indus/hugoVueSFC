@@ -11,12 +11,12 @@
 
 
 ### Code used for this page:
-#### [Partial](https://github.com/indus/hugoVueSFC/blob/main/layouts/partials/extend_head.html#L7):
-``` hbs
+#### [extend_head.html](https://github.com/indus/hugoVueSFC/blob/main/layouts/partials/extend_head.html#L7):
+``` hbs {lineNos=true,lineNoStart=7}
 {{partial "vueSFC/global" (dict "ctx" $)}} 
 ```
-#### [Partial](https://github.com/indus/hugoVueSFC/blob/main/layouts/_default/single.html#L35-L40):
-``` hbs
+#### [single.html](https://github.com/indus/hugoVueSFC/blob/main/layouts/_default/single.html#L35-L40):
+``` hbs {lineNos=true,lineNoStart=35}
 {{partial "vueSFC/style" (dict "ctx" $ "path" .Params.vueSFC) }}
 <div id="sfc">
   {{partial "vueSFC/template" (dict "ctx" $ "path" .Params.vueSFC)}}
@@ -24,33 +24,6 @@
 {{partial "vueSFC/script" (dict "ctx" $ "path" .Params.vueSFC "defer" true)}}
 ```
 #### [msg_partial.vue](https://github.com/indus/hugoVueSFC/blob/main/content/partial/msg_partial.vue):
-``` vue
-<template>
-  <p class="msg">{{ msg }}</p>
-</template>
-
-<script lang="ts">
-import type Vue from 'vue'
-declare global {
-  interface Window { Vue: typeof Vue; }
-}
-const { createApp, ref } = window.Vue;
-
-createApp({
-  setup: () => {
-    const msg = ref('Hello from Vue!');
-    return { msg };
-  }
-}).mount("#sfc");
-</script>
-
-<style lang="scss">
-.msg {
-  color: lighten(limegreen, 5);
-  font-weight: bold;
-  font-size: 2.5em;
-}
-</style>
-```
+{{< highlightFile path="msg_partial.vue" lang="vue" options="lineNos=true" >}}
 
 
